@@ -32,15 +32,15 @@ import {
 } from "react-router"
 
 const FOOD_IMAGE =
-  "https://images.unsplash.com/photo-1641873933980-fcff60026f50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1400"
+  "https://images.unsplash.com/photo-1641873933980-fcff60026f50?crop=entropy&fit=max&fm=webp&q=76&w=1400"
 const FOOD_IMAGE_2 =
-  "https://images.unsplash.com/photo-1605490500023-b96e71486495?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1000"
+  "https://images.unsplash.com/photo-1605490500023-b96e71486495?crop=entropy&fit=max&fm=webp&q=76&w=1000"
 const FOOD_IMAGE_3 =
-  "https://images.unsplash.com/photo-1613520422094-290a378bbc11?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1000"
+  "https://images.unsplash.com/photo-1613520422094-290a378bbc11?crop=entropy&fit=max&fm=webp&q=76&w=1000"
 const ROOM_IMAGES = [
-  "https://images.unsplash.com/photo-1784149703765-39065f05aca8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1200",
-  "https://images.unsplash.com/photo-1789899099345-a447f8634f20?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1200",
-  "https://images.unsplash.com/photo-1769638913500-4a0b6ac4561a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=85&w=1200",
+  "https://images.unsplash.com/photo-1784149703765-39065f05aca8?crop=entropy&fit=max&fm=webp&q=76&w=1200",
+  "https://images.unsplash.com/photo-1789899099345-a447f8634f20?crop=entropy&fit=max&fm=webp&q=76&w=1200",
+  "https://images.unsplash.com/photo-1769638913500-4a0b6ac4561a?crop=entropy&fit=max&fm=webp&q=76&w=1200",
 ]
 
 const salons = [
@@ -89,20 +89,20 @@ const dishes = [
 ]
 
 const carouselImages = [
-  { src: "/carrusel/mostro.png", alt: "Mostrito Chilwis" },
-  { src: "/carrusel/cebolla.png", alt: "Pollo a la brasa con cebolla" },
-  { src: "/carrusel/bandeja.png", alt: "Bandeja de pollo a la brasa" },
-  { src: "/carrusel/acevichada.png", alt: "Pollo acevichado" },
-  { src: "/carrusel/tacos.png", alt: "Tacos Chilwis" },
-  { src: "/carrusel/simple.png", alt: "Pollo a la brasa" },
-  { src: "/carrusel/salchipapa.png", alt: "Salchipapa Chilwis" },
-  { src: "/carrusel/piesas.png", alt: "Piezas de pollo a la brasa" },
+  { src: "/carrusel/mostro.webp", alt: "Mostrito Chilwis" },
+  { src: "/carrusel/cebolla.webp", alt: "Pollo a la brasa con cebolla" },
+  { src: "/carrusel/bandeja.webp", alt: "Bandeja de pollo a la brasa" },
+  { src: "/carrusel/acevichada.webp", alt: "Pollo acevichado" },
+  { src: "/carrusel/tacos.webp", alt: "Tacos Chilwis" },
+  { src: "/carrusel/simple.webp", alt: "Pollo a la brasa" },
+  { src: "/carrusel/salchipapa.webp", alt: "Salchipapa Chilwis" },
+  { src: "/carrusel/piesas.webp", alt: "Piezas de pollo a la brasa" },
 ]
 
 function Logo() {
   return (
     <Link to="/" className="logo-link" aria-label="Chilwis, inicio">
-      <img src="/assets/chilwis-logo.png" alt="Chilwis" />
+      <img src="/assets/chilwis-logo.webp" alt="Chilwis" />
     </Link>
   )
 }
@@ -223,10 +223,7 @@ function HomePage() {
   return (
     <>
       <section className="hero">
-        <img
-          src="/portada.png"
-          alt="Portada de Chilwis"
-        />
+        <img src="/portada.webp" alt="Portada de Chilwis" />
         <div className="hero-shade" />
         <div className="hero-content">
           <div className="eyebrow light">Sabor, fuego y familia</div>
@@ -257,7 +254,7 @@ function HomePage() {
         <div className="intro-image-wrap">
           <img
             className="intro-image"
-            src="/pollo.png"
+            src="/pollo.webp"
             alt="Pollo a la brasa recién preparado"
           />
         </div>
@@ -291,7 +288,7 @@ function HomePage() {
         <div className="intro-image-wrap">
           <img
             className="intro-image"
-            src="/crispy.png"
+            src="/crispy.webp"
             alt="Pollo crispy dorado y crujiente"
           />
         </div>
@@ -307,7 +304,11 @@ function HomePage() {
             Ver carta completa <ArrowRight size={18} />
           </Link>
         </div>
-        <div className="dish-carousel" role="region" aria-label="Galería de platos">
+        <div
+          className="dish-carousel"
+          role="region"
+          aria-label="Galería de platos"
+        >
           <div className="dish-carousel-track">
             {[false, true].map((duplicate) => (
               <div
@@ -330,7 +331,7 @@ function HomePage() {
 
       <section className="feature-band">
         <div className="feature-image">
-          <img src="/crocante.png" alt="Pollo a la brasa crocante Chilwis" />
+          <img src="/crocante.webp" alt="Pollo a la brasa crocante Chilwis" />
         </div>
         <div className="feature-copy">
           <div className="eyebrow light">El favorito de la casa</div>
