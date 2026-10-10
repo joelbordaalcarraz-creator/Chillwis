@@ -1,0 +1,15 @@
+{
+  "title": "Chilwis | Pollo a la brasa y crispy",
+  "description": "Disfruta pollo a la brasa y crispy, explora nuestra carta y descubre opciones para compartir en Chilwis.",
+  "language": "es",
+  "icons": {
+    "icon": "/assets/chilwis-logo.png"
+  },
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": false,
+    "ignoreReducedMotion": false
+  }
+}
